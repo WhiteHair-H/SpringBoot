@@ -47,5 +47,6 @@ Execution failed for task ':compileJava'. - JDK 버전
 - 데이터: 회원 ID , 이름
 - 기능: 회원 등록 , 조회
 
-
+코드작성후 검증 작업
+- 테스트 케이스 
 
