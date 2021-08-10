@@ -60,5 +60,5 @@ Execution failed for task ':compileJava'. - JDK 버전
 단축키
 - ALT + INS - getter, setter 출력
 - shift + F6 - 이름 한번에 바꾸기
-- ctrl + alt + m - Extract Method
+- ctrl + alt + m - Extract Method = 함수 빠르게 
 
