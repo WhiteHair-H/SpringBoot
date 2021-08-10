@@ -22,3 +22,6 @@ Intellij - Github 연동
 한글설정
 plugin 클릭후 Korean 언어팩 
 
+
+오류
+Execution failed for task ':compileJava'. - JDK 버전 
