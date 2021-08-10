@@ -19,4 +19,6 @@ Thymeleaf - HTML 사용하기 위한 라이브러리
 Intellij - Github 연동
 참조 - https://goddaehee.tistory.com/249
 
+한글설정
+plugin 클릭후 Korean 언어팩 
 
