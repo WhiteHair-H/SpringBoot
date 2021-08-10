@@ -51,6 +51,11 @@ Execution failed for task ':compileJava'. - JDK 버전
 - 테스트 케이스 
 
 
+순서
+- 구현 -> 테스트 작성 
+- 테스트 작성 -> 구현 : 미리 틀을 만들어놓고 실행하면서 현재 상황을 파악하는 방법(TDD)
+
+
 
 단축키
 - ALT + INS - getter, setter 출력
