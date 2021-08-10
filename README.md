@@ -5,7 +5,7 @@ Java SpringBoot 리포지토리
 8/10
 SpringBoot 시작
 
-환경
+환경 설정
 1. Java 11
 2. intellij
 
