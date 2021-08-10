@@ -15,3 +15,8 @@ https://start.spring.io/
 
 Spring Web 라이브러리
 Thymeleaf - HTML 사용하기 위한 라이브러리
+
+Intellij - Github 연동
+참조 - https://goddaehee.tistory.com/249
+
+
