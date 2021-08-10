@@ -50,3 +50,10 @@ Execution failed for task ':compileJava'. - JDK 버전
 코드작성후 검증 작업
 - 테스트 케이스 
 
+
+
+단축키
+- ALT + INS - getter, setter 출력
+- shift + F6 - 이름 한번에 바꾸기
+
+
