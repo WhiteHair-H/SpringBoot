@@ -42,3 +42,10 @@ Execution failed for task ':compileJava'. - JDK 버전
 - MVC와 템플릿 엔진 : 서버에서 변형한뒤 HTML 전달
 - API : 데이터만 입력했을 때 화면에 전달
 
+회원관리 예제 - 백엔드 개발
+- 비즈니스 요구사항 정리
+- 데이터: 회원 ID , 이름
+- 기능: 회원 등록 , 조회
+
+
+
