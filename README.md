@@ -10,14 +10,14 @@ Java SpringBoot 리포지토리
 2. intellij
 
 ### 프로젝트 만들기
-- https://start.spring.io/
+- [주소](https://start.spring.io/)
 - Spring Web 라이브러리
 - Thymeleaf - HTML 사용하기 위한 라이브러리
 - 라이브러리는 서로 의존 관계
 - Intellij - Github 연동
 
 ### Intellij 실행
-- https://goddaehee.tistory.com/249
+- [여기에서 참조했습니다](https://goddaehee.tistory.com/249)
 - 한글설정하기 : plugin 클릭후 Korean 언어팩 
 - 빌드 변경 : 설정 - gradle - 빌드 및 실행 - Intellij IDEA 변경
 - 오류 : Execution failed for task ':compileJava'. - JDK 버전 
