@@ -62,3 +62,28 @@ Execution failed for task ':compileJava'. - JDK 버전
 - shift + F6 - 이름 한번에 바꾸기
 - ctrl + alt + m - Extract Method = 함수 빠르게 생성
 - shift + F10 - 이전 테스트 실행(유용하게 사용됨)
+
+
+### 용어정리
+#### Dependency Injection(DI)
+- 재사용성을 높임.
+- 테스트에 용이.
+- 코드도 단순화.
+
+#### 의존성 주입(사진 추가)
+- 참조설명(https://medium.com/@jang.wangsu/di-dependency-injection-%EC%9D%B4%EB%9E%80-1b12fdefec4f)
+- 의존성 : B 클래스에서 A 클래스를 내부에 변수로 사용하게 됨으로써 B 클래스는 A 클래스에 의존관계가 생기게 됨.
+- 주입 : B 클래스 함수를 외부에서 객체를 생성해서 넣어주는 것.
+- 의존성 주입 : 내부에서 만든 변수를 외부에서 넣어주는 것
+
+
+
+
+
+
+
+
+
+
+
+
