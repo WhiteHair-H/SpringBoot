@@ -50,7 +50,7 @@ Java SpringBoot 리포지토리
 
 
 ### 용어정리
-#### Dependency Injection(DI)
+#### Dependency Injection(DI) 장점
 - 재사용성을 높임.
 - 테스트에 용이.
 - 코드도 단순화.
@@ -60,6 +60,7 @@ Java SpringBoot 리포지토리
 - 의존성 : B 클래스에서 A 클래스를 내부에 변수로 사용하게 됨으로써 B 클래스는 A 클래스에 의존관계가 생기게 됨.
 - 주입 : B 클래스 함수를 외부에서 객체를 생성해서 넣어주는 것.
 - 의존성 주입 : 내부에서 만든 변수를 외부에서 넣어주는 것
+- 종류 : 필드 주입, setter 주입, 생성자 주입 ===> 의존관계가 실행중에 동적으로 변하는 경우는 거의 없으므로 **생성자 주입**을 권장
 
 
 ### 스프링 빈과 의존관계
@@ -68,6 +69,7 @@ Java SpringBoot 리포지토리
 - @Component애노테이션이 있으면 자동으로 스프링 빈으로 자동 등록된다
 - @Controller , @Service , @Repository
 - 기본으로 싱글톤으로 등록됨
+- *정형화된 컨트롤러, 서비스 , 리포지토리 같은 코드떄 사용*
 
 
 #### 싱글톤
@@ -92,7 +94,7 @@ Java SpringBoot 리포지토리
 
 #### 자바 코드로 직접 스프링 빈 등록하기
 - 회원 서비스와 회원 리포지토리의 @Service, @Repository, @Autowired 애노테이션을 제거하고 진행
-
+- 정형화 되지 않거나, 상황에 따라 구현 클래스를 변경해야 하면 설정을 통해 스프링 빈으로 등록
 ```
 @Configuration
 public class SpringConfig {
