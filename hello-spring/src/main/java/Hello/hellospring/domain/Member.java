@@ -1,5 +1,7 @@
 package Hello.hellospring.domain;
 
+// Model
+
 public class Member {
 
     private Long id;
