@@ -76,7 +76,7 @@ Java SpringBoot 리포지토리
 - 유일하게 하나만 등록해서 공유
 
 
-```
+```java
 // 회원 서비스 스프링 빈 등록
 @Service
   public class MemberService {
@@ -95,7 +95,8 @@ Java SpringBoot 리포지토리
 #### 자바 코드로 직접 스프링 빈 등록하기
 - 회원 서비스와 회원 리포지토리의 @Service, @Repository, @Autowired 애노테이션을 제거하고 진행
 - 정형화 되지 않거나, 상황에 따라 구현 클래스를 변경해야 하면 설정을 통해 스프링 빈으로 등록
-```
+
+```java
 @Configuration
 public class SpringConfig {
 
