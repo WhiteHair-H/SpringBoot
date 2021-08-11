@@ -77,7 +77,8 @@ Execution failed for task ':compileJava'. - JDK 버전
 - 의존성 주입 : 내부에서 만든 변수를 외부에서 넣어주는 것
 
 
-
+### 스프링 빈과 의존관계
+-
 
 
 
