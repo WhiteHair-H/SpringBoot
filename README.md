@@ -116,6 +116,8 @@ public class SpringConfig {
 ### DB
 - [H2 DB](https://www.h2database.com)
 - Window일 경우 h2.bat 더블클릭시 서버 연결
+- cmd창을 끌 경우 서버끊김(**중요**)
+
 
 ```sql
 drop table if exists member CASCADE;
