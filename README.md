@@ -61,4 +61,4 @@ Execution failed for task ':compileJava'. - JDK 버전
 - ALT + INS - getter, setter 출력
 - shift + F6 - 이름 한번에 바꾸기
 - ctrl + alt + m - Extract Method = 함수 빠르게 생성
-
+- shift + F10 - 이전 테스트 실행(유용하게 사용됨)
