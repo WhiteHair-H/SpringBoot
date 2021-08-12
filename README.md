@@ -113,7 +113,7 @@ public class SpringConfig {
 ```
 
 
-### DB
+### DB(사진추가)
 - [H2 DB](https://www.h2database.com)
 - Window일 경우 h2.bat 더블클릭시 서버 연결
 - cmd창을 끌 경우 서버끊김(**중요**)
@@ -127,6 +127,25 @@ create table member
   name varchar(255),
   primary key (id)
 );
+```
+
+#### IntellIj - H2.db연동
+
+- application.properies에서 다음 코드 작성
+
+```java
+spring.datasource.url= jdbc:h2:tcp://localhost/~/test
+spring.datasource.driver-class-name=org.h2.Driver
+spring.datasource.username=sa
+```
+
+- **SpringConfig**에서 작업
+- DataSource는 데이터베이스 커넥션을 획득할때 사용하는 객체
+- 스프링 부트는 데이터베이스 커넥션 정보를 바탕으로 DataSource를 생성하고 스프링 빈으로 만들어주면 DI를 받을 수 있다.
+- DI를 사용하면 기존 코드를 전혀 손대지 않고, 설정만으로 구현클래스 변경
+
+```java
+private final DataSource dataSource;
 ```
 
 
