@@ -10,14 +10,14 @@ Java SpringBoot 리포지토리
 2. intellij
 
 ### 프로젝트 만들기
-- https://start.spring.io/
+- [주소](https://start.spring.io/)
 - Spring Web 라이브러리
 - Thymeleaf - HTML 사용하기 위한 라이브러리
 - 라이브러리는 서로 의존 관계
 - Intellij - Github 연동
 
 ### Intellij 실행
-- https://goddaehee.tistory.com/249
+- [여기에서 참조했습니다](https://goddaehee.tistory.com/249)
 - 한글설정하기 : plugin 클릭후 Korean 언어팩 
 - 빌드 변경 : 설정 - gradle - 빌드 및 실행 - Intellij IDEA 변경
 - 오류 : Execution failed for task ':compileJava'. - JDK 버전 
@@ -71,6 +71,8 @@ Java SpringBoot 리포지토리
 - 기본으로 싱글톤으로 등록됨
 - *정형화된 컨트롤러, 서비스 , 리포지토리 같은 코드떄 사용*
 
+- @Autowired: 
+
 
 #### 싱글톤
 - 유일하게 하나만 등록해서 공유
@@ -113,7 +115,7 @@ public class SpringConfig {
 ```
 
 
-### DB
+### DB(사진추가)
 - [H2 DB](https://www.h2database.com)
 - Window일 경우 h2.bat 더블클릭시 서버 연결
 - cmd창을 끌 경우 서버끊김(**중요**)
@@ -128,6 +130,37 @@ create table member
   primary key (id)
 );
 ```
+
+#### IntellIj - H2.db연동
+
+- application.properies에서 다음 코드 작성
+
+```java
+spring.datasource.url= jdbc:h2:tcp://localhost/~/test
+spring.datasource.driver-class-name=org.h2.Driver
+spring.datasource.username=sa
+```
+
+- **SpringConfig**에서 작업
+- DataSource는 데이터베이스 커넥션을 획득할때 사용하는 객체
+- 스프링 부트는 데이터베이스 커넥션 정보를 바탕으로 DataSource를 생성하고 스프링 빈으로 만들어주면 DI를 받을 수 있다.
+- DI를 사용하면 기존 코드를 전혀 손대지 않고, 설정만으로 구현클래스 변경
+
+```java
+private final DataSource dataSource;
+```
+
+### 스프링 통합 테스트
+
+- DB가 제대로 들어가는 지 확인하는 작업
+- 정말 좋은 테스트는 단위 테스트를 잘 만드는 것이다.(컨테이너가 들어간다면 좋은 테스트라고 부를 수 없음.)
+
+#### 용어정리
+- @SpringBootTest: 스프링 컨테이너와 테스트를 함께 실행한다.(컨테이너 = LocalHost)
+- @Transactional: 테스트 케이스에 애노테이션이 있으면, 테스트 시작 전에 트랜잭션을 시작하고, 테스트 완료 후에 항상 롤백하는 역할. DB에 영향이 없음. 반복작업 용이.
+
+
+### 스프링 JdbcTemplate
 
 
 
