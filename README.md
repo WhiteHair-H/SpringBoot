@@ -151,6 +151,7 @@ private final DataSource dataSource;
 ### 스프링 통합 테스트
 
 - DB가 제대로 들어가는 지 확인하는 작업
+- 정말 좋은 테스트는 단위 테스트를 잘 만드는 것이다.(컨테이너가 들어간다면 좋은 테스트라고 부를 수 없음.)
 
 #### 용어정리
 - @SpringBootTest: 스프링 컨테이너와 테스트를 함께 실행한다.(컨테이너 = LocalHost)
