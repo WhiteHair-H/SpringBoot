@@ -71,6 +71,8 @@ Java SpringBoot 리포지토리
 - 기본으로 싱글톤으로 등록됨
 - *정형화된 컨트롤러, 서비스 , 리포지토리 같은 코드떄 사용*
 
+- @Autowired: 
+
 
 #### 싱글톤
 - 유일하게 하나만 등록해서 공유
@@ -156,5 +158,9 @@ private final DataSource dataSource;
 #### 용어정리
 - @SpringBootTest: 스프링 컨테이너와 테스트를 함께 실행한다.(컨테이너 = LocalHost)
 - @Transactional: 테스트 케이스에 애노테이션이 있으면, 테스트 시작 전에 트랜잭션을 시작하고, 테스트 완료 후에 항상 롤백하는 역할. DB에 영향이 없음. 반복작업 용이.
+
+
+### 스프링 JdbcTemplate
+
 
 
