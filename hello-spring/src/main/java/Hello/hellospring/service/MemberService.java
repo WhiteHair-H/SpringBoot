@@ -4,12 +4,13 @@ import Hello.hellospring.domain.Member;
 import Hello.hellospring.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
 // @Service 추가함으로써 찾음
-
+@Transactional
 public class MemberService {
 
     // 같은 인스턴스를 사용하기 위해서는
