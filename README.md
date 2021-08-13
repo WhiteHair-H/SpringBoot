@@ -162,5 +162,27 @@ private final DataSource dataSource;
 
 ### 스프링 JdbcTemplate
 
+```java
+// jdbcTemplate 사용 - 간단 그 자체!
+    @Override
+    public Optional<Member> findById(Long id) {
+        List<Member> result = jdbcTemplate.query("Select * from member where id = ?", memberRowMapper(), id);
+        return result.stream().findAny();
+    }
+
+    @Override
+    public Optional<Member> findByName(String name) {
+        List<Member> result = jdbcTemplate.query("Select * from member where name = ?", memberRowMapper(), name);
+        return result.stream().findAny();
+    }
+
+    @Override
+    public List<Member> findAll() {
+        return jdbcTemplate.query("Select * from member", memberRowMapper());
+    }
+```
+
+### JPA
+
 
 
